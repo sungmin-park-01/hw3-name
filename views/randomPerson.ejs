@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include ("partials/head.ejs") %>
+</head>
+<body>
+    <h1>Create Fictional Person</h1>
+    <%- include ("partials/nav.ejs") %>
+    <form action="/rPResults" method="GET">
+        <label>This button creates a fictional person with random details. </label>
+        <button class="btn btn-success">Create</button>
+    </form>
+    
+    <%- include ("partials/footer.ejs") %>
+</body>
+</html>

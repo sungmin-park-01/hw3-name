@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ("partials/head.ejs") %>
+</head>
+
+<body>
+    <h1>Welcome to the Home Page</h1>
+
+    <%- include ("partials/nav.ejs") %>
+
+    <form action="/searchName" method="GET">
+        <label>Name: <input type="text" name="name"></label>
+        <button class="btn btn-success">Search</button>
+    </form>
+
+
+    <%- include ("partials/footer.ejs") %>
+</body>
+
+</html>

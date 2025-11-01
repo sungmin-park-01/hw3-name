@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <%- include ("partials/head.ejs") %>
+</head>
+
+<body>
+
+    <h1>Random Person</h1>
+    <%- include ("partials/nav.ejs") %>
+        <form action="/rPResults" method="GET">
+            <label>This button creates a fictional person with random details. </label>
+            <button class="btn btn-success">Create New</button>
+        </form>
+
+        <br><br>
+
+        <div class="container">
+            <h2>Fictional Person Details</h2>
+
+            <div id="pDetails">
+                <div>Name: <%= randomName %>
+                </div>
+                <div>Phone: <%= phone %>
+                </div>
+                <div>Email: <%= email %>
+                </div>
+                <div>Country: <%= country %>
+                </div>
+                <div>City: <%= city %>
+                </div>
+                <div>Address: <%= address %>
+                </div>
+                <div>Company: <%= company %>
+                </div>
+            </div>
+        </div>
+
+
+        <%- include ("partials/footer.ejs") %>
+</body>
+
+</html>
