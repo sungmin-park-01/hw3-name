@@ -29,7 +29,7 @@ app.get('/searchName', async(req, res) => {
 });
 
 app.get('/randomPerson', (req, res) => {
-   res.render('randomperson.ejs')
+   res.render('randomPerson.ejs')
 });
 
 app.get('/rPResults', (req, res) => {
